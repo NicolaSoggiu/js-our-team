@@ -33,12 +33,9 @@ const arrTeam = [
 ];
 
 // PRINT IN CONSOLE LOG ALL THE TEAM MEMBER
-for (let i = 0; i < arrTeam.length; i++) {
-  const objTeam = arrTeam[i];
-  console.log(
-    `Member name: ${objTeam.name} role: ${objTeam.position} photo: ${objTeam.photo}`
-  );
-}
+arrTeam.forEach((el) => {
+  console.log(el);
+});
 
 // PRINT DATA IN DOM
 const teams = document.querySelector("#teams");
