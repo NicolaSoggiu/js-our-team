@@ -1,7 +1,12 @@
-function printTeam(arrTeam, eleContainer) {
-  eleContainer.innerHTML = "";
-  for (let i = 0; i < arrTeam.length; i++) {
-    let objTeam = arrTeam[i];
-    eleContainer.innerHTML += `<div> Member name: ${objTeam.name} role: ${objTeam.position} photo: ${objTeam.photo}</div>`;
-  }
+// FUNCTIONS
+function printTeam(arrTeam, teams) {
+  let html = "";
+  arrTeam.forEach((el) => {
+    html += `<div class="team-member">
+          <img src="../img/${el.photo}">
+          <h3>${el.name}</h3>
+          <p>${el.position}</p>
+        </div>`;
+  });
+  teams.innerHTML = html;
 }

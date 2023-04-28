@@ -1,0 +1,10 @@
+.teams {
+    width: 100vw;
+    height: 100vh;
+}
+
+.teams img {
+    object-fit: cover;
+    object-position: center;
+    width: 50%;
+}
