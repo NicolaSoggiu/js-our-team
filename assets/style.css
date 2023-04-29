@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #F5F5F1;
+}
+
 /* CONTAINER */
 
 .container{
@@ -13,21 +17,17 @@
     margin-inline: auto;
 }
 
-.container h3{
-    text-align: center;
-    font-size: 2rem;
-    padding: .5rem
-}
-
-.container p{
-    text-align: center;
-    line-height: 30px;
-    padding-bottom: 2rem;
-}
-
 .container .teams{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 2rem;
+}
+
+.team-member {
+    width: calc((100% - 4rem) / 3);
+    background-color: white;
+}
+.team-member img {
+    width: 100%;
 }
